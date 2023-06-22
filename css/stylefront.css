@@ -1,0 +1,108 @@
+html, body {
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	display: block;
+	background-color: black;
+	width: 100%
+}
+
+@import url('../css/font.css');
+
+:root{
+/* fonts */
+	--montez: 'Montez';
+	--Patrick: 'Patrick';
+/* colors */
+	--sky:linear-gradient(-36deg,#08d5e2 0%,#004345 100%);
+}
+/* global */
+	
+.btn {
+	border:none;
+	border-radius: 2rem;
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	font-family: Patrick;
+	cursor: pointer;
+}
+/* title */
+.title {
+	margin-bottom: 20%;
+	z-index: 2;
+	position: absolute;
+	bottom: 7px;
+	width: 100%;
+	color: white;
+	text-shadow: 0 0 10px black;
+	
+}
+.title h3 {
+	font-family: Montez;
+	font-size: 35px;
+}
+.title  h1 {
+	font-family: Montez;
+	margin: 0;
+	padding: 0 5%;
+	font-size: 7rem;
+}
+.exp-btn {
+	z-index: 2;
+	position: absolute;
+	bottom: 7px;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+.exp-btn .explore {
+	font-size: 24px;
+	margin: 1.8rem ;
+	background:white;
+	color: black;
+}
+.exp-btn .explore:hover {
+	background:transparent;
+	border:1px solid white;
+	color:white;
+}
+/*--owl carousel-- */
+.front {
+	width: 100%;
+	
+}
+.box {
+	width:auto;
+	height: auto;
+}
+.row .columns{
+	padding: 0 ;
+}
+.front .owl-carousel .item{
+	height:100vh;
+}
+.front .owl-carousel .item img{
+	opacity: 0.5;
+}
+/*--owl carousel-- */
+@media only screen and (max-width: 600px){
+.exp-btn  h1 {
+	font-size: 5rem;
+}
+}
+
+@media only screen and (max-width: 500px){
+	.title h3 {
+		font-size: 30px;
+	}
+
+		.exp-btn  h1 {
+	font-size: 4rem;
+}
+.exp-btn .explore {
+	font-size: 18px;
+}
+.title {
+	margin-bottom: 40%;
+}
+}

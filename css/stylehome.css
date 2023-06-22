@@ -1,0 +1,214 @@
+
+
+html, body {
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	display: block;
+}
+@import url('../css/font.css');
+:root{
+/* fonts */
+	--montez: 'Montez';
+	--patrick: 'Patrick';
+	--roboto: 'Roboto';
+	--sky:linear-gradient(-36deg,#08d5e2 0%,#004345 100%);
+
+	--icon: #c5e6ef;
+	--bg: #289eb9;
+
+}
+/*---------------Global Classes--------------------*/
+ul{
+	list-style-type: none;
+}
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+/*---------------Navbar--------------------*/
+.nav {
+	background-color: var(--bg);
+	height: 10%;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	display: inline-block;
+	z-index: 2;
+	box-shadow: 0 0 6px 1px black
+}
+.nav .nav-link {
+ height: 100%;
+
+}
+.nav .nav-items {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	width: (100%/5);
+	 height: 100%;
+
+}
+
+.nav .nav-items .link {
+	border-left: 2px solid white;
+	text-align: center;
+	width: 100%;
+	padding: 1rem;
+	
+}
+.nav .nav-items .link a{
+	color: var(--icon);
+	font-size: 25px;
+}
+
+.nav .nav-items .link a i:hover {
+	color: white;
+	transform: scale(1.4);
+}
+/*---------------site Content--------------------*/
+
+main .site-content {
+	display: grid;
+	grid-template-columns: 70% 30%;
+
+}
+/*---------------site title--------------------*/
+main .site-title {
+	background-color: var(--bg);
+	border-bottom-right-radius: 4rem;
+	display: flex;
+	top:0;
+	position: sticky;
+	width: 100%;
+	height: 20%;
+}
+main .site-title .title {
+	color: white;
+}
+main .site-title .title h1 {
+	font-size: 30px;
+	margin-left: 1rem;
+}
+/*------------Blog Carousel----------------*/
+.container {
+	margin: 1vw 5vw 15vw 5vw;
+	font-family: var(--patrick);
+
+}
+main .site-content {
+	
+}
+main .post h3 {
+	margin-bottom: 5px;
+	font-family: var(--montez);
+	font-size: 30px;
+}
+main .site-content .post .post-content {
+	border: 2px solid var(--bg);
+	border-radius: 1rem;
+	background-color: #87e0dc;
+	margin-bottom: 1rem;
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+
+}
+main .site-content .post  .owl-carousel .item{
+	background-color: white;
+	height:auto;
+	border-radius:2rem;
+	margin: 1rem;
+
+}
+section .container .owl-nav {
+	display: none;
+}
+.owl-dots {
+	display: none;
+}
+main .site-content .post  .owl-carousel .item img {
+	border-radius: 1rem;
+	box-shadow: 0px 0px 4px black;
+}
+main .site-content .post  .owl-carousel .item i {
+	color: #87e0dc;
+	font-size: 35px;
+	position: fixed;
+	margin: 0 1.5rem 1.5rem 0;
+	bottom: 0;
+	right: 0;
+}
+main .site-content .post  .owl-carousel .item i:hover{
+	color:#f9476c;
+}
+main .site-content .post .popular-content {
+	padding: 1rem;
+	border-radius: 1rem;
+	border: 2px solid var(--bg);
+	background-color: #87e0dc;
+	display: inline-block;
+	height:auto;
+	margin-bottom: 1rem;
+
+}
+
+main .site-content .post .popular-content img{
+	border-radius: 1rem;
+	width: 25%;
+	float: left;
+	margin-right: 10px;
+}
+main .site-content .post .popular-content p {
+	margin: 0;
+	text-indent: 2rem;
+	font-family: georgia;
+} 
+
+/*------------Side Bar----------------*/
+.site-content >.sidebar  .category-list {
+	font-family: var(--patrick);
+}
+.site-content >.sidebar .category h3 {
+	margin-left: 20px;
+	font-family: var(--montez);
+	font-size: 30px;
+}
+.site-content > .sidebar .category-list .list-items {
+	background: var(--sky);
+	padding: .4rem 1rem;
+	margin: .8rem 0;
+	border-radius: 3rem;
+	width:70%;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.site-content > .sidebar .category-list .list-items a {
+	color: white;
+}
+.site-content > .sidebar .category-list .list-items a:hover {
+	transform: scale(1.2);
+}
+.site-content > .sidebar .category-list .list-items span{
+	color: #03292b;
+}
+.site-content > .sidebar .category-list .list-items span:hover{
+	color: white;
+}
+/*-- Viewport less or equal to 520px --*/
+@media only screen and (max-width: 500px){
+			.nav .nav-items .link a{
+			font-size: 18px;
+		}
+		main .site-title .title h1 {
+			font-size: 24px;
+		}
+			
+}
+@media only screen and (max-width: 750px){
+main .site-content {
+		grid-template-columns: 100%;
+	}
+}

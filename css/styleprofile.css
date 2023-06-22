@@ -1,0 +1,120 @@
+html, body {
+	margin: 0%;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	display: block;
+}
+@import url('../css/font.css');
+:root{
+/* fonts */
+	--montez: 'Montez';
+	--arvo: 'Arvo';
+	--roboto: 'Roboto';
+		--bg: #289eb9;
+}
+/* ---top---*/
+.container i {
+	color: black;
+	position: absolute;
+	margin: 1rem;
+}
+.container .menu i{
+	right: 0;
+}
+.container {
+	width: 100%;
+	display: inline-block;
+	background-color: #87e0dc;
+	height: 100%;
+}
+/* ---profile content */
+.container .prod-profiles {
+	display: grid;
+	grid-template-columns: 70% 30%;
+	background-color: white;
+	border-top-right-radius: 7rem;
+	border-top-left-radius: 7rem;
+	margin: 2rem 2rem 1rem 2rem;
+	padding-top: 1rem;
+	overflow: hidden;
+}
+.container .prod-profiles .image {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+.container .prod-profiles .image img{
+	box-shadow: 0 0 10px 1px #87e0dc;
+	border-radius: 2rem;
+	width: 45%;
+}
+/* ---blog */
+.container .prod-profiles .about-prod {
+	margin-bottom: 1rem;
+	border-top: 1px solid  #87e0dc;
+	border-bottom: 1px solid #87e0dc;
+}
+.container .prod-profiles .about-prod .item{
+	margin: 1rem  1rem 1rem 1rem;
+	height: auto;
+	overflow: auto;
+}
+.container .prod-profiles .about-prod .item img{
+box-shadow: 0 0 10px 1px #87e0dc;
+	border-radius: 2rem;
+}
+section .container .owl-nav {
+	display: none;
+}
+.owl-dots {
+	display: none;
+}
+/* ---cart*/
+.container .prod-profiles aside{
+	padding-top: 7rem;
+}
+.container .prod-profiles span {
+	font-size: 20px;
+}
+.container .prod-profiles .add-cart {
+	font-family: var(--arvo);
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 1rem;
+	padding: .5rem;
+}
+.container .prod-profiles .add-cart  .box {
+	border: none;
+	outline: none;
+	background-color: #87e0dc;
+	color: black;
+	font-size: 15px;
+	margin: 10px 10px 0 10px;
+	padding: 3px;
+
+}
+.container .prod-profiles .add-cart .btn{
+	padding: .5rem;
+	width: 80%;
+	font-size: 24px;
+	font-family: georgia;
+	background: none;
+	border: 2px solid #87e0dc;
+	cursor: pointer;
+}
+.container .prod-profiles .add-cart .btn:hover{
+	color: var(--bg);
+}
+
+@media only screen and (max-width: 750px){
+.container .prod-profiles  {
+			border-top-right-radius: 4rem;
+			border-top-left-radius: 4rem;
+		grid-template-columns: 100%;
+	}
+	.container .prod-profiles aside{
+	padding-top: 0;
+}
+.container .prod-profiles .add-cart .btn{
+	font-size: 18px;
+}
+}
